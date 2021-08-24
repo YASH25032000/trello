@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="cont1">
+        <div class="top1">ADD NEW TASK</div>
+    </div>
+    <div class="cont1">
+        <form action="/todos" method="POST">
+            <div class=cont1>
+                <label for="task" class="top1">Task</label>
+                <input type="text" id="task" name="todo[task]">
+            </div>
+            <div class="cont1">
+                <label for="priority" class="top1">Priority</label>
+                <select name="todo[priority]" id="priority">
+                    <option value="1">LOW</option>
+                    <option value="2">MEDIUM</option>
+                    <option value="3">HIGH</option>
+                </select>
+            </div>
+            <div class="cont1">
+                <button class="top1">submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="cont1">
+        <a href="/todos" class="top1">BACK</a>
+    </div>
+</body>
+</html>
